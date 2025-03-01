@@ -83,7 +83,7 @@ Copy this code block in place of `// Copy your solution here` within `Runtime.cs
 
 ```C#
 			int n = 10;
-			Console.WriteLine("Finding the " + n + "th Fibonacci number iteratively");
+			Console.WriteLine("Finding the " + n + "th Fibonacci number recursively");
 			int fib = Fibonacci.FibonacciRecursive(n);
 			Console.WriteLine("The " + n + "th Fibonacci number is " + fib);
 ```
