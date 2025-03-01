@@ -10,6 +10,25 @@ namespace InterviewPrep.Keywords.Proof.BinarySearch
         // Binary search is valuable, because it divides the work
         // in half at each step, which means it has O(log n) time complexity.
 
+        // Detailed Example based on IterativelyFindIndexOfTarget:
+        // Imagine you have a sorted array of integers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // You want to find the index of the number 8.
+        // You start by finding the midpoint by adding the left and right bounds
+        // and dividing by 2: (0 + 9) / 2 = 4.5, which is 4 (integers are whold numbers).
+        // The midpoint is 5, which is the value at index 4.
+        // You compare the target value, 8, to the midpoint, 5.
+        // Since 8 is greater than 5, you know the target is to the right of the midpoint.
+        // You move the left bound to the midpoint + 1, which is 5.
+        // and you loop, finding the new midpoint by adding the left and right bounds
+        // and dividing by 2: (5 + 9) / 2 = 7.
+        // The midpoint is 8, which is the value at index 7.
+        // You compare the target value, 8, to the midpoint, 8.
+        // so now you have the target value's index, which you return!
+        //
+        // Critically, because the array is sorted and you can divide every time
+        // you do an operation, it is a very efficient search, with our
+        // while loop only needing to loop twice in the example above.
+
         /// <summary>
         /// Find the index of a given target in a sorted int array with binary search
         /// </summary>
