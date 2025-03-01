@@ -14,6 +14,32 @@ namespace InterviewPrep.Keywords.Proof.Fibonacci
         // Iteratively is the most efficient way to implement Fibonacci.
         // Iteratively has O(n) time complexity.
 
+        // Detailed Example based on FibonacciIterative:
+        // Imagine you want to find the 6th Fibonacci number.
+        // You start with a as 0 and b as 1 because those are the first two
+        // Fibonacci numbers.
+        // You set a temporary variable to store the sum of a and b.
+        // You iterate from 2 to 6, because you already have 0 and 1.
+        // At each step, you calculate the sum of a and b.
+        // You set a to b, because you are moving to the next number.
+        // You set b to the sum of a and b.
+        // You repeat this, moving through the sequence until you reach the 6th number.
+        // The 6th Fibonacci number is 8, so you return 8.
+
+        // Detailed Example based on FibonacciRecursive:
+        // Imagine you want to find the 10th Fibonacci number.
+        // You start with the base case: if n is 0 or 1, return n.
+        // It's important to remember that in this case, you're working backwards
+        // compared to when you're doing it iteratively. This is the
+        // only way that you can get base cases of 0 and 1 to work.
+        // You call the function the first time with n = 10.
+        // The function calls itself with n = 9 and n = 8.
+        // These function calls call themselves with n = 8 and n = 7, and so on.
+        // So if you look at what's getting added together,
+        // you're adding 9 + 8 + 8 + 7 + 7 + 6 + 6 + 5 + 5 + 4 + 4 + 3 + 3 + 2 + 2 + 1 + 1 + 0 + 0.
+        // This is a lot of repeated work, which is why the recursive solution is inefficient.
+        // Mathemically, this can be expressed as F(n) = F(n-1) + F(n-2) for all n ≥ 2.
+
         /// <summary>
         /// Find the nth Fibonacci number recursively
         /// </summary>
