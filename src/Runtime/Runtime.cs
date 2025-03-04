@@ -1,13 +1,13 @@
 using System;
 using System.Diagnostics;
-using InterviewPrep.Keywords.Practice;
-using InterviewPrep.Keywords.Proof.BinarySearch;
-using InterviewPrep.Keywords.Proof.Dictionary;
-using InterviewPrep.Keywords.Proof.HashSet;
-using InterviewPrep.Keywords.Proof.Fibonacci;
-using InterviewPrep.Keywords.Proof.Trie;
+using jmsudar.DotNet.InterviewPrep.Keywords.Practice;
+using jmsudar.DotNet.InterviewPrep.Keywords.Proof.BinarySearch;
+using jmsudar.DotNet.InterviewPrep.Keywords.Proof.Dictionary;
+using jmsudar.DotNet.InterviewPrep.Keywords.Proof.HashSet;
+using jmsudar.DotNet.InterviewPrep.Keywords.Proof.Fibonacci;
+using jmsudar.DotNet.InterviewPrep.Keywords.Proof.Trie;
 
-namespace InterviewPrep.Keywords.Runtime
+namespace jmsudar.DotNet.InterviewPrep.Keywords.Runtime
 {
 	class Runtime
 	{

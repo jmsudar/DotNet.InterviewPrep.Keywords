@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace InterviewPrep.Keywords.Proof.Fibonacci
+namespace jmsudar.DotNet.InterviewPrep.Keywords.Proof.Fibonacci
 {
     public class Fibonacci
     {

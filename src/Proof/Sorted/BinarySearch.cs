@@ -1,4 +1,4 @@
-namespace InterviewPrep.Keywords.Proof.BinarySearch
+namespace jmsudar.DotNet.InterviewPrep.Keywords.Proof.BinarySearch
 {
     public class BinarySearch 
     {

@@ -34,6 +34,38 @@ The `src/` directory contains 3 subdirectories:
 
 `Runtime/` contains a console application with a `main` entrypoint, which is how you actually run this repo as an app. You will use this to actually test your solution. v1 of this app is meant to have as few barrier to use as possible, so for right now, as previously stated, `Practice/README.md` has copy-paste blocks of code for you to include in `Runtime.cs` that will quickly test one of your solutions with appropriate input. In future versions, I may make this instead use some form of random generation, or even generative AI, but will not let perfect be the enemy of good.
 
+## Table of Contents
+
+#### Usage READMEs
+
+[Proof](/src/Proof/README.md)
+[Practice](/src/Practice/README.md)
+
+#### Determinism
+
+[README](/src/Proof/Deterministic/README.md)
+[Dictionary](/src/Proof/Deterministic/Dictionary.cs)
+
+#### Distinct
+
+[README](/src/Proof/Distinct/README.md)
+[HashSet](/src/Proof/Distinct/HashSet.cs)
+
+#### Fibonacci
+
+[README](/src/Proof/Fibonacci/README.md)
+[Fibonacci](/src/Proof/Fibonacci/Fibonacci.cs)
+
+#### Prefix
+
+[README](/src/Proof/Prefix/README.md)
+[Trie](/src/Proof/Prefix/Trie.cs)
+
+#### Sorted
+
+[README](/src/Proof/Sorted/README.md)
+[BinarySearch](/src/Proof/Sorted/BinarySearch.cs)
+
 ### Getting started
 
 To start, if you're brand new to this, you should give the [Proof README](/src/Proof/README.md) a look, as it will explain a lot of the concepts you need to know. Then after that, I would study each solution within `Proof/` to get an idea of how each implementation relates to a given keyword. Finally, you should practice! Literally write some solutions, as a library, in `Practice/Practice.cs`, then implement your library in `Runtime.cs`. Once you've done this and saved your work, you can run the console app with the command below.

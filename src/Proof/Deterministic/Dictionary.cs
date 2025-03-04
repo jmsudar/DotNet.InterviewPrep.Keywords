@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace InterviewPrep.Keywords.Proof.Dictionary
+namespace jmsudar.DotNet.InterviewPrep.Keywords.Proof.Dictionary
 {
     public class Dictionary
     {
