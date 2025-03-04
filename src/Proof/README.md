@@ -96,6 +96,32 @@ Copy this code block in place of `// Copy your solution here` within `Runtime.cs
 			Console.WriteLine("The " + n + "th Fibonacci number is " + fib);
 ```
 
+### Fibonacci - Recursive with Memoization
+
+Solving the Fibonacci sequence with recursion get impractical very quickly, because the complexity class is exponential, aka O(2^N). That is anathema in programming because it invariably means retrodding the same ground multiple times, when the whole point of computers is to save effort and find efficiency. Exponential complexity becomes untenable almost immediately. The work doubles at every step, so even something like N=30 is going to take forever to process.
+
+To solve this, the solution is to store the work that's already been done in some way. This storage is referred to as **memoization**.
+
+#### Proof
+
+Copy this code block in place of `// Copy your solution here` within `Runtime.cs` to see the memoized recursive Fibonacci sequence in action.
+
+```C#
+			Console.WriteLine("Comparing runtimes for recursive Fibonacci with and without memoization");
+
+			Stopwatch _stopwatch = new Stopwatch();
+			_stopwatch.Start();
+			int recusiveResult = Fibonacci.FibonacciRecursive(40);
+			_stopwatch.Stop();
+			Console.WriteLine($"Recursive Fibonacci without memoization: {recusiveResult} in {_stopwatch.ElapsedMilliseconds}ms");
+
+			_stopwatch.Reset();
+			_stopwatch.Start();
+			int memoizedResult = Fibonacci.FibonacciRecursiveWithMemoization(40);
+			_stopwatch.Stop();
+			Console.WriteLine($"Recursive Fibonacci with memoization: {memoizedResult} in {_stopwatch.ElapsedMilliseconds}ms");
+```
+
 ## Prefix
 
 Sort of like Fibonacci, this is one of those things where you're likely to be asked a fairly specific question instead of something general that you then connect with a larger idea. In terms of programming problems, you might be asked "given word foo, how can you tell what prefixes make up the beginning of foo?" If that sounds wonky, welcome to computer science, but in reality this is valuable. Thank about autocomplete, one of those nice responsive boxes you type into that shows you what options you can choose that are supported. There can be many, many options available with something like this, so you want to be sure and write something efficient to parse them. Well, parsing a portion of what someone has written means you're doing a lot of prefix handling!
