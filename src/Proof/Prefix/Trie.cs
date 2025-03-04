@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace InterviewPrep.Keywords.Proof.Trie
+namespace jmsudar.DotNet.InterviewPrep.Keywords.Proof.Trie
 {
     public class Trie
     {

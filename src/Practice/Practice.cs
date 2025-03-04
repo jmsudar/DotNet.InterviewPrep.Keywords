@@ -1,6 +1,7 @@
-namespace InterviewPrep.Keywords.Practice;
-
-public class Practice
+namespace jmsudar.DotNet.InterviewPrep.Keywords.Practice
 {
-	// Implement your solution here
+	public class Practice
+	{
+		// Implement your solution here
+	}
 }

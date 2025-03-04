@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace InterviewPrep.Keywords.Proof.HashSet
+namespace jmsudar.DotNet.InterviewPrep.Keywords.Proof.HashSet
 {
     public class Hash
     {
