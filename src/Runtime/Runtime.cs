@@ -4,6 +4,7 @@ using InterviewPrep.Keywords.Proof.BinarySearch;
 using InterviewPrep.Keywords.Proof.Dictionary;
 using InterviewPrep.Keywords.Proof.HashSet;
 using InterviewPrep.Keywords.Proof.Fibonacci;
+using InterviewPrep.Keywords.Proof.Trie;
 
 namespace InterviewPrep.Keywords.Runtime
 {
