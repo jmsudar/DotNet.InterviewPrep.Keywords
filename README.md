@@ -38,33 +38,33 @@ The `src/` directory contains 3 subdirectories:
 
 #### Usage READMEs
 
-[Proof](/src/Proof/README.md)
-[Practice](/src/Practice/README.md)
+- [Proof](/src/Proof/README.md)
+- [Practice](/src/Practice/README.md)
 
 #### Determinism
 
-[README](/src/Proof/Deterministic/README.md)
-[Dictionary](/src/Proof/Deterministic/Dictionary.cs)
+- [README](/src/Proof/Deterministic/README.md)
+- [Dictionary](/src/Proof/Deterministic/Dictionary.cs)
 
 #### Distinct
 
-[README](/src/Proof/Distinct/README.md)
-[HashSet](/src/Proof/Distinct/HashSet.cs)
+- [README](/src/Proof/Distinct/README.md)
+- [HashSet](/src/Proof/Distinct/HashSet.cs)
 
 #### Fibonacci
 
-[README](/src/Proof/Fibonacci/README.md)
-[Fibonacci](/src/Proof/Fibonacci/Fibonacci.cs)
+- [README](/src/Proof/Fibonacci/README.md)
+- [Fibonacci](/src/Proof/Fibonacci/Fibonacci.cs)
 
 #### Prefix
 
-[README](/src/Proof/Prefix/README.md)
-[Trie](/src/Proof/Prefix/Trie.cs)
+- [README](/src/Proof/Prefix/README.md)
+- [Trie](/src/Proof/Prefix/Trie.cs)
 
 #### Sorted
 
-[README](/src/Proof/Sorted/README.md)
-[BinarySearch](/src/Proof/Sorted/BinarySearch.cs)
+- [README](/src/Proof/Sorted/README.md)
+- [BinarySearch](/src/Proof/Sorted/BinarySearch.cs)
 
 ### Getting started
 
