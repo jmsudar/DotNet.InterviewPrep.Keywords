@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using InterviewPrep.Keywords.Practice;
 using InterviewPrep.Keywords.Proof.BinarySearch;
 using InterviewPrep.Keywords.Proof.Dictionary;

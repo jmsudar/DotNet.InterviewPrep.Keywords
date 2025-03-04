@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace InterviewPrep.Keywords.Proof.Fibonacci
 {
     public class Fibonacci
@@ -14,6 +17,17 @@ namespace InterviewPrep.Keywords.Proof.Fibonacci
         // Iteratively is the most efficient way to implement Fibonacci.
         // Iteratively has O(n) time complexity.
 
+        // A note on the Fibonnacci sequence:
+        // When I was writing this, I got really stuck on the recursive explanation of the sequence.
+        // It turns out that it's just an expression of the mathematical proof behind the
+        // Fibonacci sequence itself. The sequence is defined as F(n) = F(n-1) + F(n-2) for all n ≥ 2.
+        // But this threw me too, because F(4), finding the fourth Fibonacci number, should be
+        // 3, but I expressed it as F(4) = F(4 - 1) + F(4 - 2), aka 3 + 2, aka 5.
+        // But that's not what the formula is saying, it's saying that instead of adding 3 + 2, you're adding
+        // the third and second Fibonacci numbers, which are 2 and 1, to get 3.
+        // This is exactly why the Fibonacci sequence lends itself to recursion, which
+        // I will expand on more below.
+
         // Detailed Example based on FibonacciIterative:
         // Imagine you want to find the 6th Fibonacci number.
         // You start with a as 0 and b as 1 because those are the first two
@@ -27,18 +41,33 @@ namespace InterviewPrep.Keywords.Proof.Fibonacci
         // The 6th Fibonacci number is 8, so you return 8.
 
         // Detailed Example based on FibonacciRecursive:
-        // Imagine you want to find the 10th Fibonacci number.
-        // You start with the base case: if n is 0 or 1, return n.
-        // It's important to remember that in this case, you're working backwards
-        // compared to when you're doing it iteratively. This is the
-        // only way that you can get base cases of 0 and 1 to work.
-        // You call the function the first time with n = 10.
-        // The function calls itself with n = 9 and n = 8.
-        // These function calls call themselves with n = 8 and n = 7, and so on.
-        // So if you look at what's getting added together,
-        // you're adding 9 + 8 + 8 + 7 + 7 + 6 + 6 + 5 + 5 + 4 + 4 + 3 + 3 + 2 + 2 + 1 + 1 + 0 + 0.
-        // This is a lot of repeated work, which is why the recursive solution is inefficient.
-        // Mathemically, this can be expressed as F(n) = F(n-1) + F(n-2) for all n ≥ 2.
+        // Recall that above, we established that the Fibonacci sequence is defined
+        // as F(n) = F(n-1) + F(n-2) for all n ≥ 2.
+        // So let's say you're looking at F(4). That is F(4) = F(4 - 1) + F(4 - 2).
+        // Put another way, F(4) = F(3) + F(2). Putting _that_ another way, you're saying
+        // that the fourth Fibonacci number is the sum of the third and second Fibonacci numbers.
+        // F(3) is F(3) = F(3 - 1) + F(3 - 2), or F(3) = F(2) + F(1).
+        // That means that the third Fibonacci number is the sum of the second and first Fibonacci numbers.
+        // The second number is going to follow a similar relationship, being the sum of the first and zeroth numbers.
+        // Since you already know the first and zeroth numbers, you don't need to keep calculating and you can start
+        // adding things back up the recursive call stack.
+        // Since every number is going to eventually reach that base case, you're able to work backwards until
+        // you get there! This isn't very efficient, but it's clean and a clear example of recursion.
+
+        // Detailed Example based on FibonacciRecursiveWithMemoization:
+        // Really, this is very similar to the example above so I'm not going to rehash it,
+        // but the core difference is that every time you calculate a Fibonacci number,
+        // you log it in a memoization dictionary. This means that the next time you
+        // calculate that number, you can just return it from the dictionary instead of
+        // recalculating it. This prevents replumbing the same levels of the recursive
+        // call stack over and over.
+
+        /// <summary>
+        /// A memoization dictionary to store the nth Fibonacci number.
+        /// This is used during the second recursive solution to remove
+        /// repeat work and increase efficiency.
+        /// </summary>
+        private static Dictionary<int, int> _memo = new Dictionary<int, int>();
 
         /// <summary>
         /// Find the nth Fibonacci number recursively
@@ -96,6 +125,31 @@ namespace InterviewPrep.Keywords.Proof.Fibonacci
             // This works backwards from the nth number to the base cases
             // while adding the numbers together.
             return FibonacciRecursive(n - 1) + FibonacciRecursive(n - 2);
+        }
+
+        public static int FibonacciRecursiveWithMemoization(int n)
+        {
+            // Recursive Fibonacci with memoization is more efficient
+            // than the standard recursive solution because it never
+            // repeats work. At each step there is a check to see if the
+            // given value of n has already been calculated, and returns it
+            // if it has. This cuts off repeat dives into the recursive
+            // call stack.
+
+            // Same base case as the non-memoized recursive solution.
+            if (n <= 1) return n;
+
+            // Check to see if the nth number has already been calculated.
+            // If it has, return it.
+            if (_memo.ContainsKey(n)) return _memo[n];
+
+            // Log the calculate of the nth number directly into the memoization dictionary.
+            // This guards against repeat work the next time n occurs, which due to the nature of
+            // recursive Fibonacci means it almost certainly will.
+            _memo[n] = FibonacciRecursiveWithMemoization(n - 1) + FibonacciRecursiveWithMemoization(n - 2);
+            
+            // Return the calculated nth number.
+            return _memo[n];
         }
     }
 }
