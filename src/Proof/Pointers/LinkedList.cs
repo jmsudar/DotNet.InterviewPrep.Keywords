@@ -61,6 +61,33 @@ namespace jmsudar.DotNet.InterviewPrep.Keywords.Proof.LinkedList
                 Tail = node;
             }
         }
+
+        /// <summary>
+        /// Remove the head of the linked list
+        /// </summary>
+        public void RemoveHead()
+        {
+            // If the head is null, then the list is empty
+            // and there is nothing to remove.
+            if (Head == null)
+            {
+                return;
+            }
+            
+            // If the head is the tail, then the list has only
+            // one node, and removing it means the list is empty.
+            if (Head == Tail)
+            {
+                Head = null;
+                Tail = null;
+            }
+            // Otherwise, the head is removed and the next node
+            // becomes the new head.
+            else
+            {
+                Head = Head.Next;
+            }
+        }
     }
 
     /// <summary>
