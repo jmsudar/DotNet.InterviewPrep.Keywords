@@ -47,6 +47,15 @@ The Fibonacci sequence is a mathematical concept in which a number is equal to t
 
 [Fibonacci](/src/Proof/Fibonacci/Fibonacci.cs)
 
+### Pointers
+
+Generally speaking, if you are asked about a solution about efficiently assing or removing elements, each element knows its neighbors, or the word **pointers** is used to refer to the relationship one element has to another, you are probably being asked about a linked list.
+
+[README.md](/src/Proof/Pointers/README.md)
+
+[Linked List](/src/Proof/Pointers/LinkedList.cs)
+
+
 ### Prefix
 
 Prefix questions are usually phrased as "how many prefixes of a word are themselves valid words" or similar, and require using data structure that are well-suited to text parsing and traversal.
