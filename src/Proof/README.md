@@ -47,6 +47,14 @@ The Fibonacci sequence is a mathematical concept in which a number is equal to t
 
 [Fibonacci](/src/Proof/Fibonacci/Fibonacci.cs)
 
+### In Order
+
+If you are asked to use a data structure that will process things "in order," that is almost certainly either a queue or a linked list. Linked lists are covered under `Pointers`, and they are not necessarily as strictly ordered as queues are, so I'd argue pretty firmly that a queue is the best solution for a question like this!
+
+[README.md](/src/Proof/InOrder/README.md)
+
+[Queue](/src/Proof/InOrder/Queue.cs)
+
 ### Pointers
 
 Generally speaking, if you are asked about a solution about efficiently assing or removing elements, each element knows its neighbors, or the word **pointers** is used to refer to the relationship one element has to another, you are probably being asked about a linked list.
