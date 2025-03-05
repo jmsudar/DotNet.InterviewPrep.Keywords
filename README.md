@@ -41,7 +41,7 @@ The `src/` directory contains 3 subdirectories:
 - [Proof](/src/Proof/README.md)
 - [Practice](/src/Practice/README.md)
 
-#### Determinism
+#### Deterministic
 
 - [README](/src/Proof/Deterministic/README.md)
 - [Dictionary](/src/Proof/Deterministic/Dictionary.cs)
@@ -56,10 +56,25 @@ The `src/` directory contains 3 subdirectories:
 - [README](/src/Proof/Fibonacci/README.md)
 - [Fibonacci](/src/Proof/Fibonacci/Fibonacci.cs)
 
+#### In Order
+
+- [README](/src/Proof/InOrder/README.md)
+- [Queue](/src/Proof/InOrder/Queue.cs)
+
+#### Pointers
+
+- [README](/src/Proof/Pointers/README.md)
+- [LinkedList](/src/Proof/Pointers/LinkedList.cs)
+
 #### Prefix
 
 - [README](/src/Proof/Prefix/README.md)
 - [Trie](/src/Proof/Prefix/Trie.cs)
+
+#### Reverse Order
+
+- [README](/src/Proof/ReverseOrder/README.md)
+- [Stack](/src/Proof/ReverseOrder/Stack.cs)
 
 #### Sorted
 

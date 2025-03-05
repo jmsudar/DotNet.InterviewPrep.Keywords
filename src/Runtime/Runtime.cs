@@ -7,6 +7,7 @@ using jmsudar.DotNet.InterviewPrep.Keywords.Proof.HashSet;
 using jmsudar.DotNet.InterviewPrep.Keywords.Proof.Fibonacci;
 using jmsudar.DotNet.InterviewPrep.Keywords.Proof.LinkedList;
 using jmsudar.DotNet.InterviewPrep.Keywords.Proof.Queue;
+using jmsudar.DotNet.InterviewPrep.Keywords.Proof.Stack;
 using jmsudar.DotNet.InterviewPrep.Keywords.Proof.Trie;
 
 namespace jmsudar.DotNet.InterviewPrep.Keywords.Runtime
