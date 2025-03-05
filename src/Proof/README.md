@@ -77,7 +77,16 @@ Prefix questions are usually phrased as "how many prefixes of a word are themsel
 A stack is a data structure that, literally like a reverse queue, is meant so that the first thing in is the last thing out. You can literally think about this like stacking something up one at a time, then taking the stack apart one at a time.
 
 [README.md](/src/Proof/ReverseOrder/README.md)
+
 [Stack](/src/Proof/ReverseOrder/Stack.cs)
+
+### Sort
+
+Being asked to sort something is one of the quintessential programming problems, matched perhaps only by being asked to search something. Interestingly enough, some searches require sorting, but either way it's important to know how to sort, because it is a pretty pure expression of algorithmic thinking.
+
+[README.md](/src/Proof/Sort/README.md)
+
+[QuickSort](/src/Proof/Sort/QuickSort.cs)
 
 ### Sorted
 
