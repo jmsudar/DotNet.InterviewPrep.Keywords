@@ -72,6 +72,13 @@ Prefix questions are usually phrased as "how many prefixes of a word are themsel
 
 [Trie](/src/Proof/Prefix/Trie.cs)
 
+### Reverse Order
+
+A stack is a data structure that, literally like a reverse queue, is meant so that the first thing in is the last thing out. You can literally think about this like stacking something up one at a time, then taking the stack apart one at a time.
+
+[README.md](/src/Proof/ReverseOrder/README.md)
+[Stack](/src/Proof/ReverseOrder/Stack.cs)
+
 ### Sorted
 
 This is actually the word that inspired me to build this repo: when doing programming problems with a friend, I stammered on a problem and he blazed right into it, because he recognized the word, "sorted" as suggesting he start with binary search as a solution.

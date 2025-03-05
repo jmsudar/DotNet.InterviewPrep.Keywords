@@ -63,6 +63,33 @@ namespace jmsudar.DotNet.InterviewPrep.Keywords.Proof.LinkedList
         }
 
         /// <summary>
+        /// Add a new value to the head of the linked list
+        /// </summary>
+        /// <param name="value">The value being added</param>
+        public void AddHead(T value)
+        {
+            // A new node representing the value being added.
+            LinkedListNode<T> node = new LinkedListNode<T>(value);
+            
+            // If the head is null, then the list is empty
+            // and the new node is both the head and the tail.
+            if (Head == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+                // The new node is the new head, and the old head
+                // is the new node's next.
+                // This shifts everything to the right, functionally, which is important for
+                // some extending data structures.
+                node.Next = Head;
+                Head = node;
+            }
+        }
+
+        /// <summary>
         /// Remove the head of the linked list
         /// </summary>
         public void RemoveHead()
