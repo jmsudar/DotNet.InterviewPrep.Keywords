@@ -15,25 +15,7 @@ namespace jmsudar.DotNet.InterviewPrep.Keywords.Runtime
 	{
 		static void Main(string[] args)
 		{
-			// Queue
-			Queue<int> queue = new Queue<int>();
-
-			Console.WriteLine("Entering 1, 2, 3, 4, 5 into an integer queue");
-			
-			queue.Enqueue(1);
-			queue.Enqueue(2);
-			queue.Enqueue(3);
-			queue.Enqueue(4);
-			queue.Enqueue(5);
-
-			Console.WriteLine("Dequeuing each item from the queue while isEmpty() == false");
-
-			while (queue.IsEmpty() == false)
-			{
-				Console.WriteLine(queue.Dequeue());
-			}
-
-			Console.WriteLine("The queue is now empty!");
+			// Copy your solution here
 		}
 	}
 }
