@@ -76,6 +76,11 @@ The `src/` directory contains 3 subdirectories:
 - [README](/src/Proof/ReverseOrder/README.md)
 - [Stack](/src/Proof/ReverseOrder/Stack.cs)
 
+#### Smallest
+
+- [README](/src/Proof/Smallest/README.md)
+- [Heap](/src/Proof/Smallest/Heap.cs)
+
 #### Sort
 
 - [README](/src/Proof/Sort/README.md)
