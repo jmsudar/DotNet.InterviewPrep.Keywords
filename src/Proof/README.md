@@ -80,6 +80,14 @@ A stack is a data structure that, literally like a reverse queue, is meant so th
 
 [Stack](/src/Proof/ReverseOrder/Stack.cs)
 
+### Smallest
+
+Or largest. Basically, the question you might get here could be "find the Kth largest (or smallest) number in an array." The implication is that the array is unsorted so you are doing the work yourself. Heaps are typically your best option for this because they're organized in an ascending or descending largest/smallest order.
+
+[README.md](/src/Proof/Smallest/README.md)
+
+[Heap](/src/Proof/Smallest/Heap.cs)
+
 ### Sort
 
 Being asked to sort something is one of the quintessential programming problems, matched perhaps only by being asked to search something. Interestingly enough, some searches require sorting, but either way it's important to know how to sort, because it is a pretty pure expression of algorithmic thinking.
